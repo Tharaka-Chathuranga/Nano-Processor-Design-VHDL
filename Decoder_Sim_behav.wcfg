@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Instruction_Decoder_Sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Instruction_Decoder_Sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="7613fs"></ZoomEndTime>
+      <Cursor1Time time="4940000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="72"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/Instruction_Decoder_Sim/UUT/Ins" type="array">
+      <obj_property name="ElementShortName">Ins[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Ins[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Decoder_Sim/UUT/Reg_En" type="array">
+      <obj_property name="ElementShortName">Reg_En[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_En[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Decoder_Sim/UUT/Reg_Sel_1" type="array">
+      <obj_property name="ElementShortName">Reg_Sel_1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_Sel_1[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Decoder_Sim/UUT/Reg_Sel_2" type="array">
+      <obj_property name="ElementShortName">Reg_Sel_2[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_Sel_2[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Decoder_Sim/UUT/Jflag" type="logic">
+      <obj_property name="ElementShortName">Jflag</obj_property>
+      <obj_property name="ObjectShortName">Jflag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Instruction_Decoder_Sim/UUT/Reg_Check_J" type="array">
+      <obj_property name="ElementShortName">Reg_Check_J[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Reg_Check_J[3:0]</obj_property>
+   </wvobject>
+</wave_config>

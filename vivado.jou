@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 17 12:11:10 2023
+# Process ID: 9164
+# Current directory: C:/Users/Tharaka/Nano_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24320 C:\Users\Tharaka\Nano_processor\Nano_processor.xpr
+# Log file: C:/Users/Tharaka/Nano_processor/vivado.log
+# Journal file: C:/Users/Tharaka/Nano_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tharaka/Nano_processor/Nano_processor.xpr
+update_compile_order -fileset sources_1
+launch_simulation -simset Nanoprocessor_Sim
+source Nanoprocessor_Sim.tcl
+current_wave_config {Untitled 1}
+add_wave {{/Nanoprocessor_Sim/UUT/ROM_0}} 
+current_wave_config {Untitled 1}
+add_wave {{/Nanoprocessor_Sim/UUT/Instruction_Decoder_0}} 
+save_wave_config {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg}
+add_files -fileset Nanoprocessor_Sim -norecurse C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+set_property xsim.view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} [get_filesets Nanoprocessor_Sim]
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+launch_simulation -simset Nanoprocessor_Sim
+launch_simulation -simset Nanoprocessor_Sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+close_sim
+launch_simulation -simset Nanoprocessor_Sim
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+create_project project_9 C:/Users/Tharaka/project_9 -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+import_files -norecurse C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd
+update_compile_order -fileset sources_1
+create_fileset -simset Instruction_Decoder_Sim
+file mkdir C:/Users/Tharaka/project_9/project_9.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets Instruction_Decoder_Sim]
+file mkdir C:/Users/Tharaka/project_9/project_9.srcs/Instruction_Decoder_Sim/new
+close [ open C:/Users/Tharaka/project_9/project_9.srcs/Instruction_Decoder_Sim/new/Instruction_Decoder_Sim.vhd w ]
+add_files -fileset Instruction_Decoder_Sim C:/Users/Tharaka/project_9/project_9.srcs/Instruction_Decoder_Sim/new/Instruction_Decoder_Sim.vhd
+update_compile_order -fileset Instruction_Decoder_Sim
+current_project Nano_processor
+current_project project_9
+current_project Nano_processor
+current_project project_9
+update_compile_order -fileset Instruction_Decoder_Sim
+launch_simulation
+source Instruction_Decoder.tcl
+close_sim
+launch_simulation
+source Instruction_Decoder.tcl
+close_sim
+launch_simulation
+source Instruction_Decoder.tcl
+close_sim
+launch_simulation
+source Instruction_Decoder.tcl
+close_sim
+close_project
+close_sim

@@ -1,0 +1,911 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 17 12:11:10 2023
+# Process ID: 9164
+# Current directory: C:/Users/Tharaka/Nano_processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24320 C:\Users\Tharaka\Nano_processor\Nano_processor.xpr
+# Log file: C:/Users/Tharaka/Nano_processor/vivado.log
+# Journal file: C:/Users/Tharaka/Nano_processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Tharaka/Nano_processor/Nano_processor.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 915.234 ; gain = 122.266
+update_compile_order -fileset sources_1
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 966.090 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 966.090 ; gain = 0.000
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Nanoprocessor_Sim/UUT/ROM_0}} 
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/Nanoprocessor_Sim/UUT/Instruction_Decoder_0}} 
+save_wave_config {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg}
+add_files -fileset Nanoprocessor_Sim -norecurse C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+WARNING: [filemgmt 56-12] File 'C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg' cannot be added to the project because it already exists in the project, skipping this file
+set_property xsim.view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} [get_filesets Nanoprocessor_Sim]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 989.273 ; gain = 23.184
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 995.035 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1001.500 ; gain = 1.023
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1012.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1020.691 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1028.996 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd:68]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit nanoprocessor_sim in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd:68]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit nanoprocessor_sim in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2335] case statement does not cover all choices. 'others' clause is needed [C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd:68]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit nanoprocessor_sim in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1033.828 ; gain = 4.832
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1033.828 ; gain = 4.832
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -simset Nanoprocessor_Sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Nanoprocessor_Sim'
+INFO: [SIM-utils-54] Inspecting design source files for 'Nanoprocessor_Sim' in fileset 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Nanoprocessor_Sim'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+"xvhdl --incr --relax -prj Nanoprocessor_Sim_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d67148b89f544efe991f05c10fbbb116 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Nanoprocessor_Sim_behav xil_defaultlib.Nanoprocessor_Sim -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_2_to_4 [decoder_2_to_4_default]
+Compiling architecture behavioral of entity xil_defaultlib.Decoder_3_to_8 [decoder_3_to_8_default]
+Compiling architecture behavioral of entity xil_defaultlib.Reg [reg_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_Bank [register_bank_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplexer_8_to_1 [multiplexer_8_to_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_8_way_4_bit [mux_8_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.HA [ha_default]
+Compiling architecture behavioral of entity xil_defaultlib.FA [fa_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add_Sub_Unit [add_sub_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_4_bit [mux_2_way_4_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Adder_3_bit [adder_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux_2_way_3_bit [mux_2_way_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.D_FF [d_ff_default]
+Compiling architecture behavioral of entity xil_defaultlib.Slow_Clk [slow_clk_default]
+Compiling architecture behavioral of entity xil_defaultlib.PC_3_bit [pc_3_bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [rom_default]
+Compiling architecture behavioral of entity xil_defaultlib.Instruction_Decoder [instruction_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.Nanoprocessor [nanoprocessor_default]
+Compiling architecture behavioral of entity xil_defaultlib.nanoprocessor_sim
+Built simulation snapshot Nanoprocessor_Sim_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/Nano_processor/Nano_processor.sim/Nanoprocessor_Sim/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Nanoprocessor_Sim_behav -key {Behavioral:Nanoprocessor_Sim:Functional:Nanoprocessor_Sim} -tclbatch {Nanoprocessor_Sim.tcl} -view {C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config C:/Users/Tharaka/Nano_processor/Nanoprocessor_Sim_behav.wcfg
+source Nanoprocessor_Sim.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Nanoprocessor_Sim_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1035.434 ; gain = 1.305
+create_project project_9 C:/Users/Tharaka/project_9 -part xc7a35tcpg236-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2018.2/data/ip'.
+set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
+import_files -norecurse C:/Users/Tharaka/Nano_processor/Nano_processor.srcs/sources_1/new/Instruction_Decoder.vhd
+update_compile_order -fileset sources_1
+create_fileset -simset Instruction_Decoder_Sim
+file mkdir C:/Users/Tharaka/project_9/project_9.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets Instruction_Decoder_Sim]
+file mkdir C:/Users/Tharaka/project_9/project_9.srcs/Instruction_Decoder_Sim/new
+close [ open C:/Users/Tharaka/project_9/project_9.srcs/Instruction_Decoder_Sim/new/Instruction_Decoder_Sim.vhd w ]
+add_files -fileset Instruction_Decoder_Sim C:/Users/Tharaka/project_9/project_9.srcs/Instruction_Decoder_Sim/new/Instruction_Decoder_Sim.vhd
+update_compile_order -fileset Instruction_Decoder_Sim
+current_project Nano_processor
+current_project project_9
+current_project Nano_processor
+current_project project_9
+update_compile_order -fileset Instruction_Decoder_Sim
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Instruction_Decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Instruction_Decoder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tharaka/project_9/project_9.srcs/sources_1/imports/new/Instruction_Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Instruction_Decoder
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffad8ba54dfb4ffcb910f33253ac5626 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Instruction_Decoder_behav xil_defaultlib.Instruction_Decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.instruction_decoder
+Built simulation snapshot Instruction_Decoder_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim/xsim.dir/Instruction_Decoder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed May 17 13:18:09 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Instruction_Decoder_behav -key {Behavioral:sim_1:Functional:Instruction_Decoder} -tclbatch {Instruction_Decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Instruction_Decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Instruction_Decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1081.680 ; gain = 7.922
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Instruction_Decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Instruction_Decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffad8ba54dfb4ffcb910f33253ac5626 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Instruction_Decoder_behav xil_defaultlib.Instruction_Decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Instruction_Decoder_behav -key {Behavioral:sim_1:Functional:Instruction_Decoder} -tclbatch {Instruction_Decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Instruction_Decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Instruction_Decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1082.250 ; gain = 0.414
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Instruction_Decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Instruction_Decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffad8ba54dfb4ffcb910f33253ac5626 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Instruction_Decoder_behav xil_defaultlib.Instruction_Decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Instruction_Decoder_behav -key {Behavioral:sim_1:Functional:Instruction_Decoder} -tclbatch {Instruction_Decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Instruction_Decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Instruction_Decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1082.902 ; gain = 0.539
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Instruction_Decoder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Instruction_Decoder_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ffad8ba54dfb4ffcb910f33253ac5626 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Instruction_Decoder_behav xil_defaultlib.Instruction_Decoder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Tharaka/project_9/project_9.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Instruction_Decoder_behav -key {Behavioral:sim_1:Functional:Instruction_Decoder} -tclbatch {Instruction_Decoder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Instruction_Decoder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Instruction_Decoder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.117 ; gain = 0.871
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_project
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 17 13:27:28 2023...
